@@ -1,7 +1,6 @@
 import { LoginBtn } from '@/components/auth/login-btn';
 import { Button } from '@/components/ui/button';
 import { Heading } from '@/components/ui/heading';
-import Link from 'next/link';
 
 export default function Home() {
   return (
