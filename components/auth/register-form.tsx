@@ -38,6 +38,7 @@ export const RegisterForm = () => {
   const onSubmit = (values: FormValuesProps) => {
     setError('');
     setSuccess('');
+    form.reset();
 
     startTransition(() => {
       register(values)
@@ -72,6 +73,7 @@ export const RegisterForm = () => {
                       {...field}
                       disabled={isPending}
                       placeholder={'name'}
+                      type={'text'}
                     />
                   </FormControl>
                   <FormMessage />
